@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.cart'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.cart"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    packagingOptions
+            {
+                exclude'META-INF/DEPENDENCIES'}
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('F:\\keystore\\keystor.jks')
+            storePassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+dependencies {
+    api 'com.alipay.sdk:alipaysdk-android:+@aar'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-fragment:2.4.1'
+    implementation 'androidx.navigation:navigation-ui:2.4.1'
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.0.4'
+    implementation 'androidx.datastore:datastore-core-android:+'
+    //implementation files('libs\\alipay-easysdk-2.2.2.jar')
+    implementation (group:'com.alipay.sdk',name:'alipay-sdk-java',version:'3.0.0')
+    //implementation (group:'com.alipay.sdk',name:'alipay-easysdk',version:'2.2.2')
+    implementation (group:'com.aliyun',name:'aliyun-java-sdk-core',version:'4.4.3')
+    implementation (group:'com.aliyun',name:'aliyun-java-sdk-ecs',version:'4.17.1')
+    implementation (group:'com.alibaba',name:'fastjson',version:'1.2.83')
+    implementation (group:'com.aliyun',name:'aliyun-java-sdk-vpc',version:'3.0.9')
+    implementation (group:'mysql',name:'mysql-connector-java',version: '5.1.47')
+    //implementation files('libs\\mysql-connector-j-8.0.32.jar')
+    //implementation files('libs\\mysql-connector-java-5.1.47.jar')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

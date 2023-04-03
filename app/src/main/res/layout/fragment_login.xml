@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#438FCB"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="果园"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/apple"  android:layout_width="70dp"/>
+    <RelativeLayout
+        android:id="@+id/uer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/iv"
+        android:background="@drawable/edit_background"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/qq_nume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="账号："
+            android:textSize="25sp"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/edit_lgnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf = "@+id/qq_nume"
+            android:background="@null"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uer"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/qq_PW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="密码："
+            android:textSize="25sp"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/edit_lgpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf = "@+id/qq_PW"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:inputType="numberPassword" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#3C8DC4"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        tools:ignore="NotSibling" />
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_login"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#3C8DC4"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

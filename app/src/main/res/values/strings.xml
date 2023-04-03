@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">果园</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">购物车</string>
+    <string name="title_notifications">我的</string>
+    <string name="demo_info_text">重要说明: \n\n本 Demo 为了方便向商户展示支付宝的支付流程，所以订单信息的加签过程放在客户端完成。\n在商户的真实App内，为了防止商户私密数据泄露，引发资金损失和身份冒用等各种安全风险，商户私钥 RSA_PRIVATE 等数据严禁放在客户端，订单信息的加签过程也务必放在服务端完成。\n若商户接入时不遵照此说明而造成损失，需自行承担。</string>
+    <string name="pay_with_alipay">支付宝支付 Demo</string>
+    <string name="pay_with_alipay_hk">HK 支付宝支付 Demo</string>
+    <string name="auth_with_alipay">支付宝授权 Demo</string>
+    <string name="web_to_native">网页支付转 native 支付 Demo</string>
+    <string name="check_sdk_version">支付宝 SDK 版本</string>
+    <string name="pay_success">支付成功:</string>
+    <string name="pay_failed">支付失败:</string>
+    <string name="auth_success">授权成功:</string>
+    <string name="auth_failed">授权失败:</string>
+    <string name="error_missing_appid_rsa_private">错误: 需要配置 PayDemoActivity 中的 APPID 和 RSA_PRIVATE</string>
+    <string name="error_missing_hk_partner_seller_rsa_private">错误：需要配置 OrderUtils1_0_HK 中的 PARTNER、SELLER 和 RSA_PRIVATE</string>
+    <string name="pay_result">支付结果:</string>
+    <string name="error_auth_missing_partner_appid_rsa_private_target_id">错误: 需要配置PARTNER |APP_ID| RSA_PRIVATE| TARGET_ID</string>
+    <string name="alipay_sdk_version_is">支付宝 SDK 版本:</string>
+    <string name="confirm">确定</string>
+    <string name="error_missing_h5_pay_url">必须配置需要打开的url 站点，请在PayDemoActivity类的h5Pay中配置</string>
+    <string name="error">错误</string>
+    <string name="pay_cross_border">境外收单支付 Demo</string>
+    <string name="error_missing_global_partner_seller_rsa_private" >错误：需要配置 OrderUtils1_0_Global 中的 PARTNER、SELLER 和 RSA_PRIVATE</string>
+    <string name="payment_inst_hk">付款方: HK</string>
+    <string name="payment_inst_cn">付款方: CN</string>
+    <string name="苹果">R.drawable.apple.png</string>
+    <string-array name="FruitType">
+        <item>请选择水果类型</item>
+        <item>梨果</item>
+        <item>核果</item>
+        <item>聚合核果</item>
+        <item>瘦果</item>
+        <item>柑果</item>
+        <item>瓠果</item>
+        <item>浆果</item>
+        <item>凤梨科</item>
+        <item>柿科</item>
+        <item>仙人掌科</item>
+    </string-array>
+    <string-array name="SearchFruitType">
+        <item>全部</item>
+        <item>梨果</item>
+        <item>核果</item>
+        <item>聚合核果</item>
+        <item>瘦果</item>
+        <item>柑果</item>
+        <item>瓠果</item>
+        <item>浆果</item>
+        <item>凤梨科</item>
+        <item>柿科</item>
+        <item>仙人掌科</item>
+    </string-array>
+    <string-array name="selectFruitType">
+        <item>请选择水果</item>
+        <item>苹果、沙果、海棠、野樱莓、枇杷、欧楂、山楂、香梨、雪梨、梨、温柏、蔷薇果、花楸</item>
+        <item>杏、白玉樱桃、樱桃、桃、水蜜桃、油桃、蟠桃等、李子、梅子、青梅、西梅</item>
+        <item>黑莓、覆盆子、云莓、罗甘莓、白里叶莓</item>
+        <item>草莓、菠萝莓</item>
+        <item>橘子、砂糖桔、橙子、柠檬、青柠、柚子、金桔、葡萄柚、香橼、佛手、指橙、黄皮果</item>
+        <item>哈密瓜、香瓜、白兰瓜、刺角瓜、金铃子、癞葡萄、香蕉、大蕉、南洋红香蕉、西瓜</item>
+        <item>葡萄、提子、醋栗、黑醋栗、红醋栗、蓝莓、蔓越莓、越橘、乌饭果、猕猴桃、奇异果、黄心猕猴桃、软枣猕猴桃、奇异莓、红心猕猴桃</item>
+        <item>菠萝、凤梨</item>
+        <item>柿子、黑枣、君迁子、黑柿</item>
+        <item>红心火龙果、白心火龙果、火龙果</item>
+    </string-array>
+
+</resources>

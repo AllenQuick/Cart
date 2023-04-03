@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource"
+    android:tag="addgoods">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#438FCB"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="果园"
+                android:textSize="30sp" >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/add_background"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:text="水果名称"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/edit_frname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/add_background"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:text="水果种类"
+                android:textSize="25dp"/>
+
+            <Spinner
+                android:id="@+id/edit_frtype"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:entries="@array/FruitType"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/add_background"
+            android:orientation="horizontal"
+            android:layout_below="@+id/name">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:text="单价" />
+
+            <EditText
+                android:id="@+id/edit_frprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:inputType="number"
+                android:ems="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/add_background"
+            android:orientation="horizontal"
+            android:layout_below="@+id/price">
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:text="数量" />
+
+            <EditText
+                android:id="@+id/edit_frcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:inputType="number"
+                android:ems="10" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_submitfruit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="添加水果信息" />
+        <Button
+            android:id="@+id/bt_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="退出登录"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
